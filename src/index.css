@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e1320;
+    color: #dee2f5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overscroll-behavior: none;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #090e1b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #252a38;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+}
+
+/* Material symbols adjustments */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility semantic color definitions matching design specs */
+.bg-surface-container-lowest { background-color: #090e1b; }
+.bg-surface-container-low { background-color: #161b29; }
+.bg-surface-container { background-color: #1a1f2d; }
+.bg-surface-container-high { background-color: #252a38; }
+.bg-surface-container-highest { background-color: #303443; }
+.bg-surface-bright { background-color: #343948; }
+
+.bg-primary-container { background-color: #38bdf8; }
+.bg-error-container { background-color: #93000a; }
+.bg-secondary-container { background-color: #0053db; }
+.bg-tertiary-container { background-color: #ff938c; }
+
+.text-on-surface { color: #dee2f5; }
+.text-on-surface-variant { color: #bdc8d1; }
+.text-outline { color: #87929a; }
+.text-outline-variant { color: #3e484f; }
+.text-primary { color: #8ed5ff; }
+.text-primary-container { color: #38bdf8; }
+.text-on-primary-container { color: #004965; }
+.text-secondary { color: #b4c5ff; }
+.text-tertiary { color: #ffbcb7; }
+.text-tertiary-fixed { color: #ffdad7; }
+.text-error { color: #ffb4ab; }
+
+.border-outline-variant { border-color: rgba(62, 72, 79, 0.4); }
+.border-outline-variant\/30 { border-color: rgba(62, 72, 79, 0.3); }
+.border-outline-variant\/40 { border-color: rgba(62, 72, 79, 0.4); }
+.border-outline-variant\/50 { border-color: rgba(62, 72, 79, 0.5); }
+
+/* Font utilities */
+.font-code-sm { font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 14px; }
+.font-code-md { font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 16px; }
+.font-code-lg { font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 20px; }
+.font-label-md { font-family: 'Inter', sans-serif; font-size: 12px; line-height: 16px; font-weight: 500; }
+.font-body-sm { font-family: 'Inter', sans-serif; font-size: 12px; line-height: 16px; }
+.font-body-md { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 20px; }
+.font-headline-md { font-family: 'Inter', sans-serif; font-size: 18px; line-height: 24px; font-weight: 500; }
+.font-headline-lg { font-family: 'Inter', sans-serif; font-size: 24px; line-height: 32px; font-weight: 600; }
+.font-headline-xl { font-family: 'Inter', sans-serif; font-size: 32px; line-height: 40px; font-weight: 600; }

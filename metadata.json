@@ -1,0 +1,6 @@
+{
+  "name": "Money Trail Explorer",
+  "description": "AML intelligence node for visualizing financial flow topologies, structural layering patterns, and suspicious transaction chains in real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
